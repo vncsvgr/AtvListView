@@ -26,5 +26,10 @@ namespace AtividadeViewCell
         {
             await Navigation.PopAsync();
         }
+
+        private void lstSmartphones_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+
+        }
     }
 }

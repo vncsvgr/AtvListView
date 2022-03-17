@@ -10,15 +10,15 @@
         </Frame>
 
         <Frame BorderColor="Black" Margin="10" CornerRadius="20">
-            <Entry Placeholder="Digite o fabricante" />
+            <Entry Placeholder="Digite o fabricante" x:Name="edtFabricante"/>
         </Frame>
 
         <Frame BorderColor="Black" Margin="10" CornerRadius="20">
-            <Entry Placeholder="Digite o modelo" />
+            <Entry Placeholder="Digite o modelo" x:Name="edtModelo"/>
         </Frame>
 
         <Frame BorderColor="Black" Margin="10" CornerRadius="20">
-            <Entry Placeholder="Digite a cor" />
+            <Entry Placeholder="Digite a cor" x:Name="edtCor"/>
         </Frame>
 
         <Button x:Name="btnCadastrar" Text="Cadastrar Smartphone" Clicked="btnCadastrar_Clicked"/>

@@ -10,8 +10,22 @@
             </Frame>
 
             <SearchBar x:Name="sbSmartphones" TextChanged="sbSmartphones_TextChanged" />
-            
-            
+
+            <ListView x:Name="lstSmartphones" ItemSelected="lstSmartphones_ItemSelected" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+
+                            <Grid ColumnDefinitions="*,*,*">
+                                <Label Text="{Binding Fabricante}" HorizontalTextAlignment="Center" />
+                                <Label Grid.Column="1" Text="{Binding Modelo}"  HorizontalTextAlignment="Center" />
+                                <Label Grid.Column="2" Text="{Binding Cor}"  HorizontalTextAlignment="Center"/>
+                            </Grid>
+
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
 
             <Button x:Name="Voltar" Text="Voltar ao Cadastro" Clicked="Voltar_Clicked"/>
 
