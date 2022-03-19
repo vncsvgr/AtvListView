@@ -23,7 +23,7 @@
 
         <Button x:Name="btnCadastrar" Text="Cadastrar Smartphone" Clicked="btnCadastrar_Clicked"/>
         <Button x:Name="btnPesquisar" Text="Pesquisar" Clicked="btnPesquisar_Clicked"/>
-        <Button x:Name="Finalizar" Text="Finalizar Aplicativo" />
+        <Button x:Name="btnFinalizar" Text="Finalizar Aplicativo" Clicked="btnFinalizar_Clicked" />
 
     </StackLayout>
 
