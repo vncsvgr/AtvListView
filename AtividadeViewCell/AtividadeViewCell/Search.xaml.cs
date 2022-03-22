@@ -20,6 +20,8 @@ namespace AtividadeViewCell
             PropriedadesApp = (App)Application.Current;
 
             lstSmartphones.ItemsSource = PropriedadesApp.Smart;
+
+            NavigationPage.SetHasNavigationBar(this, false);
         }
 
         private void sbSmartphones_TextChanged(object sender, TextChangedEventArgs e)

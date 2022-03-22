@@ -5,7 +5,7 @@
     <ContentPage.Content>
         <StackLayout>
 
-            <Frame BackgroundColor="#43005E" Padding="25" >
+            <Frame BackgroundColor="#003048" Padding="25" >
                 <Label Text="SMARTPHONES" HorizontalTextAlignment="Center" FontSize="36" FontAttributes="Bold" TextColor="White" />
             </Frame>
 
@@ -19,7 +19,7 @@
                             <Grid ColumnDefinitions="*,*,*">
                                 <Label Text="{Binding Fabricante}" HorizontalTextAlignment="Center" />
                                 <Label Grid.Column="1" Text="{Binding Modelo}"  HorizontalTextAlignment="Center" />
-                                <Label Grid.Column="2" Text="{Binding Cor}"  HorizontalTextAlignment="Center"/>
+                                <Label Grid.Column="2" Text="{Binding Cor}"  HorizontalTextAlignment="Center" />
                             </Grid>
 
                         </ViewCell>
@@ -27,7 +27,7 @@
                 </ListView.ItemTemplate>
             </ListView>
 
-            <Button x:Name="Voltar" Text="Voltar ao Cadastro" Clicked="Voltar_Clicked"/>
+            <Button x:Name="Voltar" Text="Voltar ao Cadastro" Clicked="Voltar_Clicked" BackgroundColor="#878787" TextColor="White"/>
 
         </StackLayout>
     </ContentPage.Content>

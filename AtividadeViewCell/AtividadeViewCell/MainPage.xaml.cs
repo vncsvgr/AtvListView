@@ -18,6 +18,8 @@ namespace AtividadeViewCell
             InitializeComponent();
 
             PropriedadesApp = (App)Application.Current;
+
+            NavigationPage.SetHasNavigationBar(this, false);
         }
 
         private void btnCadastrar_Clicked(object sender, EventArgs e)
@@ -39,9 +41,14 @@ namespace AtividadeViewCell
             await Navigation.PushAsync(new Search());
         }
 
-        private void btnFinalizar_Clicked(object sender, EventArgs e)
+        private async void btnFinalizar_Clicked(object sender, EventArgs e)
         {
-            Environment.Exit(0);
+            var fechar = await DisplayAlert("Fechar", "Deseja encerrar o aplicativo?", "Sim", "Não");
+            if (fechar)
+            {
+                Environment.Exit(0);
+            }
+
         }
     }
 }

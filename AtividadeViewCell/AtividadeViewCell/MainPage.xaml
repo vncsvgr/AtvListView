@@ -1,11 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AtividadeViewCell.MainPage">
+             x:Class="AtividadeViewCell.MainPage"
+             BackgroundColor="#5A5A5A">
 
     <StackLayout>
 
-        <Frame BackgroundColor="#43005E" Padding="25" >
+        <Frame BackgroundColor="#003048" Padding="25" >
             <Label Text="SMARTPHONES" HorizontalTextAlignment="Center" FontSize="36" FontAttributes="Bold" TextColor="White" />
         </Frame>
 
@@ -21,9 +22,14 @@
             <Entry Placeholder="Digite a cor" x:Name="edtCor"/>
         </Frame>
 
-        <Button x:Name="btnCadastrar" Text="Cadastrar Smartphone" Clicked="btnCadastrar_Clicked"/>
-        <Button x:Name="btnPesquisar" Text="Pesquisar" Clicked="btnPesquisar_Clicked"/>
-        <Button x:Name="btnFinalizar" Text="Finalizar Aplicativo" Clicked="btnFinalizar_Clicked" />
+        <StackLayout Orientation="Horizontal">
+            <Button x:Name="btnCadastrar" Text="Cadastrar" Clicked="btnCadastrar_Clicked" BackgroundColor="#878787" 
+                    TextColor="White" HorizontalOptions="FillAndExpand"/>
+            <Button x:Name="btnPesquisar" Text="Pesquisar" Clicked="btnPesquisar_Clicked" BackgroundColor="#878787"
+                    TextColor="White" HorizontalOptions="FillAndExpand"/>
+        </StackLayout>
+        
+        <Button x:Name="btnFinalizar" Text="Finalizar Aplicativo" Clicked="btnFinalizar_Clicked" BackgroundColor="#878787" TextColor="White"/>
 
     </StackLayout>
 
