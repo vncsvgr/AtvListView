@@ -16,10 +16,11 @@
                     <DataTemplate>
                         <ViewCell>
 
-                            <Grid ColumnDefinitions="*,*,*">
+                            <Grid ColumnDefinitions="*,*,*,*">
                                 <Label Text="{Binding Fabricante}" HorizontalTextAlignment="Center" />
                                 <Label Grid.Column="1" Text="{Binding Modelo}"  HorizontalTextAlignment="Center" />
-                                <Label Grid.Column="2" Text="{Binding Cor}"  HorizontalTextAlignment="Center" />
+                                <Label Grid.Column="2" Text="{Binding Armazenamento}"  HorizontalTextAlignment="Center" />
+                                <Label Grid.Column="3" Text="{Binding Cor}"  HorizontalTextAlignment="Center" />
                             </Grid>
 
                         </ViewCell>

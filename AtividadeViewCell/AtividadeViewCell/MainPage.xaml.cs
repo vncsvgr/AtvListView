@@ -13,6 +13,14 @@ namespace AtividadeViewCell
     {
         private App PropriedadesApp;
 
+        List<string> Armazenamento = new List<string>
+        {
+            "64gb",
+            "128gb",
+            "256gb",
+            "512gb"
+        };
+
         public MainPage()
         {
             InitializeComponent();
@@ -20,6 +28,8 @@ namespace AtividadeViewCell
             PropriedadesApp = (App)Application.Current;
 
             NavigationPage.SetHasNavigationBar(this, false);
+
+            pckArmazenamento.ItemsSource = Armazenamento;
         }
 
         private void btnCadastrar_Clicked(object sender, EventArgs e)
@@ -28,9 +38,12 @@ namespace AtividadeViewCell
             sp.Fabricante = edtFabricante.Text;
             sp.Modelo = edtModelo.Text;
             sp.Cor = edtCor.Text;
+            sp.Armazenamento = pckArmazenamento.SelectedIndex.ToString();
 
             PropriedadesApp.Smart.Add(sp);
 
+            pckArmazenamento.ItemsSource = null;
+            pckArmazenamento.ItemsSource = Armazenamento;
             edtFabricante.Text = "";
             edtModelo.Text = "";
             edtCor.Text = "";

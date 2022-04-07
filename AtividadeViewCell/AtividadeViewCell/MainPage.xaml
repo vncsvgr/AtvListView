@@ -19,6 +19,10 @@
         </Frame>
 
         <Frame BorderColor="Black" Margin="10" CornerRadius="20">
+            <Picker x:Name="pckArmazenamento" Title="Armazenamento" />
+        </Frame>
+
+        <Frame BorderColor="Black" Margin="10" CornerRadius="20">
             <Entry Placeholder="Digite a cor" x:Name="edtCor"/>
         </Frame>
 

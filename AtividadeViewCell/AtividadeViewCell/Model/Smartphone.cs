@@ -9,5 +9,6 @@ namespace AtividadeViewCell.Model
         public string Fabricante { get; set; }
         public string Modelo { get; set; }
         public string Cor { get; set; }
+        public string Armazenamento { get; set; }
     }
 }
